@@ -451,7 +451,7 @@ uis.controller('uiSelectCtrl',
   };
 
   ctrl.clear = function($event) {
-    ctrl.select(undefined);
+    ctrl.select(null);
     $event.stopPropagation();
     $timeout(function() {
       ctrl.focusser[0].focus();
